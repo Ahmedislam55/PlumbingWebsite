@@ -10,7 +10,7 @@ import SolvePlumbing from "./SolvePlumbing/SolvePlumbing";
 
 export default function HomePage() {
   return (
-    <section>
+    <>
       <SolvePlumbing />
       <PlumbingSolutions />
       <PipeRepair />
@@ -20,7 +20,7 @@ export default function HomePage() {
       <FeedbackPage />
       <NumberPage /> 
       <HomeImages />
-    </section>
+    </>
 
   )
 }
