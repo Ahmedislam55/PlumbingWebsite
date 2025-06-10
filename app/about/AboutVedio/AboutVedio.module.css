@@ -1,0 +1,7 @@
+.image
+{
+    height: 40rem;
+    background-image: url("../../../public/assests/image-40-copyright.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+}

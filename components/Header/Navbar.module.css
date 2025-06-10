@@ -1,0 +1,21 @@
+.links li
+{
+   position: relative;
+}
+.links li::after
+{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2.5px;
+    left: 10px;
+    background-color: #0A5C64;
+    opacity: 0;
+    transition: all 0.5s;
+    bottom: -3px;
+}
+.links li:hover::after
+{
+    opacity: 1;
+    width: 80%;
+}
