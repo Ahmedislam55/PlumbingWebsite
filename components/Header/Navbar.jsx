@@ -62,9 +62,13 @@ export default function Navbar() {
             {/* icons , button for mobile */}
             <div className="flex justify-between items-center md:gap-8 gap-4">
               <Link href="/cart" className="relative">
-                <span className="absolute lg:hidden -top-4 -right-3 p-2 h-5 w-5 text-sm flex justify-center items-center text-white rounded-full bg-main">
-                   {cart.length}
-                </span>
+                {cart.length === 0 ? (
+                  ""
+                ) : (
+                  <span className="absolute lg:hidden -top-4 -right-3 p-2 h-5 w-5 text-sm flex justify-center items-center text-white rounded-full bg-main">
+                    {cart.length}
+                  </span>
+                )}
                 <ShoppingBag className="lg:hidden hover:text-main transation duration-700" />
               </Link>
               <Search
@@ -131,9 +135,13 @@ export default function Navbar() {
             <div className="hidden lg:flex justify-center items-center gap-8">
               <Link href="/cart">
                 <div className="relative">
-                  <span className="absolute -top-4 left-4 p-2 h-5 w-5 text-sm flex justify-center items-center text-white rounded-full bg-main">
-                    {cart.length}
-                  </span>
+                  {cart.length === 0 ? (
+                    ""
+                  ) : (
+                    <span className="absolute -top-4 left-4 p-2 h-5 w-5 text-sm flex justify-center items-center text-white rounded-full bg-main">
+                      {cart.length}
+                    </span>
+                  )}
                 </div>
                 <ShoppingBag className="hidden lg:block hover:text-main transation duration-700" />
               </Link>
