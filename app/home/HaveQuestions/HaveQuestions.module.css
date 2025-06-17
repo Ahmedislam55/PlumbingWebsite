@@ -1,0 +1,13 @@
+.section
+{
+    background-image: url("../../../public/assests/img-16.1-copyright-scaled.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+}
+@media (max-width: 450px)
+{
+    .section h1
+    {
+        font-size: 20px;
+    }    
+}
