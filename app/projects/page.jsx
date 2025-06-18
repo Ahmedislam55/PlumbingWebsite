@@ -2,6 +2,11 @@ import { projects } from "@/lib/Projects";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+export const metadata = {
+  title: "Plumbing Repair Projects",
+  description:
+    "Reliable and affordable plumbing repair solutions for homes and businesses. Contact us now for expert service.",
+};
 export default function ProjectsPage() {
   return (
     <section className="bg-gray-100">
