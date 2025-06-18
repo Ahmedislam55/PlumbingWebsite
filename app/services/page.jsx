@@ -5,7 +5,11 @@ import PlumbingSystems from "./PlumbingSystems/PlumbingSystems";
 import SchedulePage from "./SchedulePage/SchedulePage";
 import ServicesHome from "./ServicesHome/ServicesHome";
 import ServicesIcons from "./ServicesIcons/ServicesIcons";
-
+export const metadata = {
+  title: "Plumbing Repair Services",
+  description:
+    "Reliable and affordable plumbing repair solutions for homes and businesses. Contact us now for expert service.",
+};
 export default function page() {
   return (
     <>
